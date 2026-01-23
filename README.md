@@ -23,8 +23,8 @@ El objetivo de esta práctica es seguir modelando problemas con clases, objetos 
 En este caso me he centrado en crear varias clases que representen elementos del problema (como el robot R2D2 y  y en que el comportamiento quede encapsulado dentro de las propias clases, dejando el `main` solo como punto de entrada para probarlos.
 
 1. **Requisitos previos:**
-    - Lenguaje: Kotlin (versión 1.9.x o compatible)[^4]
-    - Entorno: IntelliJ IDEA Community Edition o similar, con soporte para proyectos Kotlin/JVM.[^4]
+    - Lenguaje: Kotlin (versión 1.9.x o compatible)
+    - Entorno: IntelliJ IDEA Community Edition o similar, con soporte para proyectos Kotlin/JVM.[
 2. **Pasos para compilar el código:**
 
 Si se usa IntelliJ:
@@ -72,7 +72,7 @@ En cada ejercicio he intentado que las clases estén bien encapsuladas, de forma
 
 ### Código Fuente
 
-El código fuente de la práctica está en el repositorio de la tarea de GitHub Classroom, organizado en paquetes según el enunciado.[^1]
+El código fuente de la práctica está en el repositorio de la tarea de GitHub Classroom, organizado en paquetes según el enunciado.
 
 Algunos archivos principales (ejemplos, adapta los nombres reales):
 
@@ -82,33 +82,23 @@ Algunos archivos principales (ejemplos, adapta los nombres reales):
 
 ### Ejemplos de Ejecución
 
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+A modo de ejemplo, en el ejercicio del robot R2D2:
+
+- **Entrada:**
+    - Conjunto de movimientos definidos como un array de arrays de enteros, donde cada subarray representa una secuencia de pasos a seguir por robot.
+- **Salida esperada:**
+    - Después de cada movimiento, el programa muestra por consola la posición final y la dirección actual del robot con un mensaje del estilo:
+`R2D2 está en (x, y) Direccion` siguiendo el formato indicado en el enunciado.
+
 
 ### Resultados de Pruebas
 
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
-
-## Documentación Adicional
-
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+Las pruebas las he realizado de forma manual ejecutando el programa varias veces y cambiando los datos de entrada (sobre todo en arrays de movimientos y casos límite, como listas vacías o valores negativos).
+Asimismo, también he verificado que los métodos de las clases se comportan como se espera en el enunciado y que la salida por consola es coherente respecto a los casos probados.
 
 ## Conclusiones
 
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+Con esta práctica he seguido afianzando la programación orientada a objetos en Kotlin, especialmente el uso de clases, métodos y enumeraciones.
+De la misma forma, me ha ayudado a pensar más en términos de objetos y responsabilidades, intentando que cada clase y método tenga un objetivo claro y que el código sea más fácil de entender y reutilizar.
 
-## Referencias y Fuentes
-
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
-
-### Notas Adicionales:
-
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+También he visto la importancia de probar distintos casos de entrada para asegurarme de que las clases responden bien ante valores que no son los “típicos”, como arrays vacíos o movimientos negativos.
