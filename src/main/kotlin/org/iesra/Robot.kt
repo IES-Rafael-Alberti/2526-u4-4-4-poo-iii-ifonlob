@@ -12,10 +12,10 @@ class Robot(val nombre : String) {
     fun mover(movimiento : IntArray) {
         for(num in movimiento) {
             when(direccionActual) {
-                Direcciones.PositiveY -> if(num >= 0) posY + num else posY -= num
-                Direcciones.NegativeX -> if(num < 0) posX + num else posX -= num
-                Direcciones.NegativeY -> if(num < 0) posY + num else posY -= num
-                Direcciones.PositiveX -> if(num >= 0) posX + num else posX -= num
+                Direcciones.PositiveY -> posY += num
+                Direcciones.NegativeX -> posX -= num
+                Direcciones.NegativeY -> posY -= num
+                Direcciones.PositiveX -> posX += num
             }
             direccionActual = obtenerSiguienteDireccion()
         }
